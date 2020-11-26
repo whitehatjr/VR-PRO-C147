@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Textures and Sounds</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky
+        src="https://img.freepik.com/free-photo/beautiful-dusk-light-colorful-beauty_1203-5706.jpg"
+      ></a-sky>
+
+      <a-plane
+        id="ground"
+        src="https://cdn.pixabay.com/photo/2017/04/13/07/25/grunge-texture-2226815_960_720.jpg"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="20"
+        height="10"
+      ></a-plane>
+
+      <a-plane
+        id="carpet"
+        src="https://images-na.ssl-images-amazon.com/images/I/A1PLH3%2BlslL._AC_SY741_.jpg"
+        position="0 0.1 0.5"
+        rotation="-90 0 0"
+        width="8"
+        height="5"
+      ></a-plane>
+
+      <a-box
+        id="wall"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIborEaklgtmp2g1Z_ps6ws_41GTrjFttWVQ&usqp=CAU"
+        position="0 6.5 -4.5"
+        width="20"
+        height="13"
+      >
+      </a-box>
+
+      <a-plane
+        id="wall-poster-left"
+        src="https://i.pinimg.com/originals/22/cd/76/22cd76da45c34cffee67dbca770e62b5.png"
+        position="-5 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <a-plane
+        id="wall-poster-middle"
+        src="https://previews.123rf.com/images/kudryashka/kudryashka1009/kudryashka100900135/7770188-beautiful-autumn-tree-for-your-design.jpg"
+        position="0 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <a-plane
+        id="wall-poster-right"
+        src="https://i.pinimg.com/originals/22/cd/76/22cd76da45c34cffee67dbca770e62b5.png"
+        position="5 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <!-- Chair 1  -->
+      <a-cylinder
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+        radius="1.2"
+        position="6.5 -0.4 0"
+      >
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+          radius="0.2"
+          position="0 1 0"
+          height="1.2"
+        >
+        </a-cylinder>
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+          position="0 1.9 0"
+          rotation="0 0 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+          position="0.85 3 0"
+          rotation="90 -90 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+      </a-cylinder>
+
+      <!-- Chair 2  -->
+
+      <a-cylinder
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+        radius="1.2"
+        position="-6.5 -0.4 0"
+      >
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+          radius="0.2"
+          position="0 1 0"
+          height="1.2"
+        >
+        </a-cylinder>
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+          position="0 1.9 0"
+          rotation="0 0 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iJBc_RxWvzfQ12X6r6EHynLX9DMrGnS4YQ&usqp=CAU"
+          position="-0.85 3 0"
+          rotation="90 -90 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+      </a-cylinder>
+
+      <!-- Dining Table -->
+      <a-box
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTk3AaWGnx9Djkok84dAL_jXjM1vWrLE9GA&usqp=CAU"
+        width="9"
+        height="3.5"
+        position="0 2 0"
+        rotation="90 0 0"
+        depth="0.2"
+      >
+        <a-cylinder
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTk3AaWGnx9Djkok84dAL_jXjM1vWrLE9GA&usqp=CAU"
+          height="2"
+          radius="0.8"
+          rotation="90 0 0"
+          position="0 0 1"
+        ></a-cylinder>
+      </a-box>
+
+      <!-- Lamp -->
+
+      <a-cone
+        color="pink"
+        position="0 7.5 0"
+        radius-top="0.5"
+        radius-bottom="2"
+      >
+        <a-sphere color="#fff176" position="0 -0.5 0"></a-sphere>
+        <a-cylinder
+          color="pink"
+          radius="0.15"
+          height="4"
+          position="0 2 0"
+        ></a-cylinder>
+      </a-cone>
+
+      <!--  --------- CAMERA --------- -->
+
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15">
+      </a-camera>
+    </a-scene>
+    <!-- Closing scene -->
+  </body>
+</html>
